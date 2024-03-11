@@ -1,0 +1,286 @@
+.casino-selecter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  width: 424px;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .5);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 9px;
+  align-items: flex-start;
+  align-content: flex-start;
+  z-index: 1000;
+  background: #000;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#000, #000), linear-gradient(0deg, rgba(153, 102, 6, .52), #fffbf5 51%, hsla(30, 60%, 79%, .4));
+
+  .casino-item {
+    width: 187px;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 5px;
+
+    &.casino_selected {
+      &::before {
+        opacity: 1;
+      }
+
+      .content-img {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -5px;
+      background: linear-gradient(45deg, red, blue);
+    }
+
+    .content-img {
+      width: 100%;
+      opacity: 0.5;
+      position: relative;
+
+      .img-part {
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        outline: none;
+        user-select: none;
+        position: relative;
+        width: 126px;
+        height: 86px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: -70px;
+          bottom: 0;
+          background-image: linear-gradient(90deg, transparent 35%, #000 60%, #000);
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .item-logo {
+      border: 0;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 70px;
+      height: 50px;
+      background-size: 61px 35px;
+      background-repeat: no-repeat;
+      z-index: 1;
+      background-position: 0 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .item-name {
+      color: #fff;
+      font-size: 12px;
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+  }
+}
+
+.type-selector {
+  list-style: none;
+  outline: none;
+  min-width: 55px;
+  display: block;
+  padding-left: 0;
+  z-index: 1100;
+  background: #000;
+  top: 38px;
+  border: 1px solid transparent;
+  padding-bottom: 0;
+  background-image: linear-gradient(#000, #000), linear-gradient(0deg, rgba(153, 102, 6, .52), #fffbf5 51%, hsla(30, 60%, 79%, .4));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 5px;
+  box-shadow: none;
+
+  li {
+    font-weight: 400;
+    min-width: 55px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #454545;
+    padding: 10px;
+
+    &.typeSelected {
+      color: #bf986b;
+    }
+
+    &:hover {
+      background-color: #454545;
+      cursor: pointer;
+    }
+  }
+}
+
+.range-selecter {
+  list-style: none;
+  outline: none;
+  min-width: 55px;
+  display: block;
+  padding-left: 0;
+  z-index: 1100;
+  background: #000;
+  top: 38px;
+  border: 1px solid transparent;
+  padding-bottom: 0;
+  background-image: linear-gradient(#000, #000), linear-gradient(0deg, rgba(153, 102, 6, .52), #fffbf5 51%, hsla(30, 60%, 79%, .4));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 5px;
+  box-shadow: none;
+
+  li {
+    font-weight: 400;
+    min-width: 55px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #454545;
+    padding: 10px;
+
+    &.rangeSelected {
+      color: #bf986b;
+    }
+
+    &:hover {
+      background-color: #454545;
+      cursor: pointer;
+    }
+  }
+}
+
+.noDefault {
+  color: #bf986b;
+}
+
+.homeContent {
+  width: 100%;
+  margin: 15px 0;
+
+  .content-wrap {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+
+    .content-table-setting {
+      width: 100%;
+      padding: 12px 0;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .table-filter-menu {
+        .dropbox-default-class {
+          margin-right: 10px;
+        }
+      }
+
+      .setting-table-card {
+        color: #fff;
+
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          li {
+            margin: 5px;
+
+            &.table_num {
+              display: flex;
+              align-items: center;
+              color: #fff;
+
+              img {
+                width: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-table-box {
+      width: 100%;
+
+      .casino-table {
+        width: 100%;
+
+        &.grid-4 {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 23px 20px;
+
+          .li-table {
+            overflow: hidden;
+          }
+        }
+
+        &.grid-9 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 23px 20px;
+
+          .li-table {
+            overflow: hidden;
+          }
+        }
+
+        &.grid-16 {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 23px 20px;
+
+          .li-table {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

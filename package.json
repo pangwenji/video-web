@@ -1,0 +1,48 @@
+{
+  "name": "video-game-baccarat",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-test": "vite build --mode test",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^10.7.1",
+    "axios": "^1.6.2",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.10",
+    "element-plus": "^2.4.3",
+    "fabric": "^5.3.0",
+    "konva": "^9.2.3",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "qs": "^6.11.2",
+    "vue": "^3.3.10",
+    "vue-clipboard3": "^2.0.0",
+    "vue-i18n": "^9.8.0",
+    "vue-inline-svg": "^3.1.2",
+    "vue-konva": "^3.0.2",
+    "vue-router": "^4.2.5",
+    "vue3-marquee": "^4.2.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.3",
+    "@vitejs/plugin-vue": "^4.5.1",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "prettier": "^3.0.3",
+    "vite": "^5.0.5",
+    "vue-svg-loader": "^0.16.0"
+  }
+}
